@@ -110,8 +110,8 @@ export async function getServerSideProps() {
     external_reference: "00000001",
     notification_url: "https://hookb.in/XkKPRnp9wzsDYMQQYapR",
     back_urls: {
-      success: "NEXT_PUBLIC_BASE_URL/thanks/success",
-      failure: "NEXT_PUBLIC_BASE_URL/thanks/failure",
+      success: `${process.env.NEXT_PUBLIC_BASE_URL}/thanks/success`,
+      failure: `${process.env.NEXT_PUBLIC_BASE_URL}/thanks/failure`,
     },
     binary_mode: true,
   });
